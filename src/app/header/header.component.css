@@ -1,0 +1,24 @@
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: Roboto,sans-serif!important;;
+}
+
+.navbar-1{
+    font-size: larger;
+}
+.navbar-1 button{
+    border:1px solid white;
+    border-radius: 5px;
+    
+}
+.navbar-2{
+    font-size: larger; 
+}
+.btn-reg{
+     border-radius: 20px;
+     border: 1px solid white;
+     height: 45px;
+    
+}

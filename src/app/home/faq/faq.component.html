@@ -1,0 +1,220 @@
+<section>
+    <div class="container-fluid m-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+
+            <!-- Faq Buttons -->
+            <div class="row m-5">
+                <div class="faq">
+                    <div class="col-12">
+                        <button class="btnm btn-lg" (click)="All()">All</button> &nbsp;
+                        <button class="btnm btn-lg" (click)="Registration()">Registration</button>&nbsp;
+                        <button class="btnm btn-lg" (click)="Login()">Login</button> &nbsp;
+                        <button class="btnm btn-lg" (click)="Certificate()">Registration</button>&nbsp;
+                        <button class="btnm btn-lg" (click)="Medical()">Medical</button> &nbsp;
+                        <button class="btnm btn-lg" (click)="RaiseAnIssue()">Raise An Issue</button>&nbsp;
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- All -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-8">
+                            <div *ngIf="OpenAll">
+                                <h5>Where can I register for COVID-19 vaccination?</h5>
+                                <hr>
+                                <h5>Can you only access the CoWIN website and register to get your vaccination
+                                    certificate
+                                    a<br>
+                                    limited number of times in a day?</h5>
+                                <hr>
+                                <h5>After trying once do you need to wait certain amount of time to try again? In other
+                                    words, <br>
+                                    can you only do it once every hour or so.</h5>
+                                <hr>
+                                <h5>Is there a mobile app that needs to be installed to register for vaccination?</h5>
+                                <hr>
+                                <h5>Which age groups can register for vaccination on the CoWIN portal?</h5>
+                                <hr>
+                                <h5>Is online registration mandatory for Covid-19 vaccination?</h5>
+                                <hr>
+                                <h5>How many people can be registered in the CoWIN portal through one mobile number?
+                                </h5>
+                                <hr>
+                                <h5>How can beneficiaries with no access to smart phones or computers manage online
+                                    registration?</h5>
+                                <hr>
+                                <h5>Can I register for vaccination without Aadhaar Card?</h5>
+                                <hr>
+                                <h5>Is there any registration charges to be paid?</h5>
+                                <hr>
+                                <h5>Can I book an appointment for vaccination in the CoWIN portal?</h5>
+                                <hr>
+                                <h5>What are the options if one citizen is aged 45 or above and other is aged 18 or
+                                    above?
+                                </h5>
+                                <hr>
+                                <h5>Can I check the vaccine being administered at each Vaccination Center?</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Registration -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-8">
+                            <div *ngIf="OpenRegistration">
+                                <h5>Where can I register for COVID-19 vaccination?</h5>
+                                <hr>
+                                <h5>Can you only access the CoWIN website and register
+                                    to get your vaccination certificate a limited number of times in a day?</h5>
+                                <hr>
+                                <h5>After trying once do you need to wait certain amount of time to try again?
+                                    In other words, can you only do it once every hour or so.?</h5>
+                                <hr>
+                                <h5>Is there a mobile app that needs to be installed to register for vaccination?</h5>
+                                <hr>
+                                <h5>Which age groups can register for vaccination on the CoWIN portal?</h5>
+                                <hr>
+                                <h5>Is online registration mandatory for Covid-19 vaccination?</h5>
+                                <hr>
+                                <h5>How many people can be registered in the CoWIN portal through one mobile number?
+                                </h5>
+                                <hr>
+                                <h5>How can beneficiaries with no access to smart phones or computers manage online
+                                    registration?</h5>
+                                <hr>
+                                <h5>Can I register for vaccination without Aadhaar Card?</h5>
+                                <hr>
+                                <h5>Is there any registration charges to be paid?</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Login -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-8">
+                            <div *ngIf="OpenLogin">
+                                <h5>Can I book an appointment for vaccination in the CoWIN portal?</h5>
+                                <hr>
+                                <h5>What are the options if one citizen is aged 45 or above and other is aged 18 or
+                                    above?
+                                </h5>
+                                <hr>
+                                <h5>Can I check the vaccine being administered at each Vaccination Center?</h5>
+                                <hr>
+                                <h5>Can I download appointment slip?</h5>
+                                <hr>
+                                <h5>How can I find the nearest Vaccination Center?</h5>
+                                <hr>
+                                <h5>What if I cannot go for vaccination on the date of appointment? Can I reschedule my
+                                    appointment?</h5>
+                                <hr>
+                                <h5>Do I have an option for cancellation of appointment?</h5>
+                                <hr>
+                                <h5>Where will I receive confirmation of date and time of vaccination?</h5>
+                                <hr>
+                                <h5>Can I get vaccination without appointment?</h5>
+                                <hr>
+                                <h5>When I click on Vaccination Center it shows 'No appointments are available in this
+                                    period'. What to do?</h5>
+                                <hr>
+                                <h5>What is the 4-digit secret code on the Account Details page of self-registration
+                                    portal
+                                    on CoWIN?</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificate -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-8">
+                            <div *ngIf="OpenCertificate">
+                                <h5>Why do I need a vaccination certificate?</h5>
+                                <hr>
+                                <h5>Who is responsible for providing the vaccination certificate?</h5>
+                                <hr>
+                                <h5>Where can I download vaccination certificate from?</h5>
+                                <hr>
+                                <h5>How can I access COVID Vaccination Certificate from DigiLocker?</h5>
+                                <hr>
+                                <h5>Why do I need an International Travel Certificate?</h5>
+                                <hr>
+                                <h5>Can I apply for International Travel Certificate?
+                                </h5>
+                                <hr>
+                                <h5>Can I travel to all the countries with International Travel Certificate?</h5>
+                                <hr>
+                                <h5>Where can I apply for International Travel Certificate?</h5>
+                                <hr>
+                                <h5>Where can I download my International Travel Certificate from?</h5>
+                                <hr>
+                                <h5>When can I download my International Travel Certificate?</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Medical -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-8">
+                            <div *ngIf="OpenMedical">
+                                <h5>Whom do I contact in case of side effects from vaccination?</h5>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Raise An Issue -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-8">
+                            <div *ngIf="OpenRaiseAnIssue">
+                                <h5>Who can raise an issue in the CoWIN portal?</h5>
+                                <hr>
+                                <h5>Where can I raise an issue/query related to CoWIN?</h5>
+                                <hr>
+                                <h5>What are the kinds of issues that can be raised on CoWIN?</h5>
+                                <hr>
+                                <h5>How much time does the CoWIN portal take in issue resolution?</h5>
+                                <hr>
+                                <h5>Where do I raise issues not listed under the 5 categories mentioned above? </h5>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</section>

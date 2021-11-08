@@ -1,0 +1,53 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <h1>Search Your Nearest Vaccination Center</h1>
+                <p>Get a preview list of the nearest centers and check availability of vaccination slots</p>
+                <p class="text-primary">Login to book your</p>
+                <div>
+                    <button  (click)="Openbydist()">ByDist</button> &nbsp;
+                    <button (click)="OnBypin()">ByPIN</button>
+                    <hr>
+
+                    <!-- By District  -->
+                    <section>
+                        <div class="container">
+                            <div class="col-4"></div>
+                            <div class="col-6">
+                                <form *ngIf="OpenclickOpen">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <input type="text" placeholder="Select your state">&nbsp;&nbsp;&nbsp;
+                                                <input type="text" placeholder="Select District">&nbsp;&nbsp;&nbsp;
+                                                <button (click)="Openbydist()">Search</button>
+                                            </td>
+                                        </tr>
+                                    </table><br>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- By PIN -->
+                    <section>
+                        <div class="container">
+                            <form *ngIf="OnclickOpenByPIN">
+                                <table >
+                                    <tr>
+                                        <td>
+                                            <input type="text" name=""  placeholder="Enter Your PIN">
+                                            <button (click)="OnBypin()">By PIN</button>
+                                        </td>
+                                    </tr>
+                                </table><br>
+                            </form>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
