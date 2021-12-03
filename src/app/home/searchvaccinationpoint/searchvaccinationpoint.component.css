@@ -1,4 +1,40 @@
-p{
-    font-size: larger;
+
+.ser{
+    text-align: center;
+    border: none;
+    /* background-color:lightsteelblue; */
 }
 
+/* log in */
+.srs{
+    border: 1px
+  blue;
+    color: blue!important;
+    padding: 5px 20px!important;
+    text-decoration: none;
+    border-radius: 30px
+  ;
+    font-weight: 500!important;
+    /* line-height: 1.5!important; */
+    /* text-align: center; */
+    /* display: block;  */
+    font-size: 16px;
+    /* margin-right: 20px; */
+  }
+  .ptabView{
+    justify-content: center;
+    
+    
+  }
+  .ptabPanel{
+    font: bolder;
+    margin-left: 100px;
+  }
+
+  .form-control{
+    padding: 0.1rem 5rem;
+  }
+  .margin{
+    margin-left: 100px;
+    display: inherit;
+  }

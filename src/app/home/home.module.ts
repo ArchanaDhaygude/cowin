@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LandingHomeComponent } from './landing-home/landing-home.component';
-import { VaccinationCountComponent } from './vaccination-count/vaccination-count.component';
 import { LandinghomeComponent } from './landinghome/landinghome.component';
 import { VaccinationcountComponent } from './vaccinationcount/vaccinationcount.component';
 import { SearchvaccinationpointComponent } from './searchvaccinationpoint/searchvaccinationpoint.component';
@@ -11,13 +9,20 @@ import { StepstovaccinateComponent } from './stepstovaccinate/stepstovaccinate.c
 import { FaqComponent } from './faq/faq.component';
 import { OurpartnerComponent } from './ourpartner/ourpartner.component';
 import { SummaryvaccinationComponent } from './summaryvaccination/summaryvaccination.component';
+import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
+import {  CUSTOM_ELEMENTS_SCHEMA , NO_ERRORS_SCHEMA} from '@angular/core';
+import { TabViewModule } from 'primeng/tabview';
+import { ButtonModule } from 'primeng/button';
 
 
+const routes: Routes = [
+ {path:'landing', component:LandinghomeComponent},
+//  {path:'raiseissue',component:RaiseissueComponent}
+]
 
 @NgModule({
   declarations: [
-    LandingHomeComponent,
-    VaccinationCountComponent,
     LandinghomeComponent,
     VaccinationcountComponent,
     SearchvaccinationpointComponent,
@@ -26,10 +31,20 @@ import { SummaryvaccinationComponent } from './summaryvaccination/summaryvaccina
     StepstovaccinateComponent,
     FaqComponent,
     OurpartnerComponent,
-    SummaryvaccinationComponent
+    SummaryvaccinationComponent,
+   
   ],
+
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    FormsModule,
+    [RouterModule.forChild(routes)],
+    TabViewModule,
+    ButtonModule
+
+  
+  ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ]
+
 })
 export class HomeModule { }

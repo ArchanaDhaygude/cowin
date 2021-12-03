@@ -5,7 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.css']
 })
+
 export class FaqComponent implements OnInit {
+
 OpenAll:any=true;
 OpenRegistration:any=false;
 OpenLogin:any=false;
@@ -17,6 +19,7 @@ OpenRaiseAnIssue:any=false;
 
   ngOnInit(): void {
   }
+  
   All(){
     this.OpenAll=true;
     this.OpenRegistration=false;

@@ -1,17 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SummaryComponent } from './summary/summary.component';
 import { VaccinationtrendComponent } from './vaccinationtrend/vaccinationtrend.component';
+import { RouterModule, Routes } from '@angular/router';
+import {ChartModule} from 'primeng/chart';
 
 
+const routes: Routes = [
+  {path:'vaccinationtrend', component:VaccinationtrendComponent},
+
+]
 
 @NgModule({
   declarations: [
-    SummaryComponent,
     VaccinationtrendComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ChartModule,
+
+    [RouterModule.forChild(routes)],
+  
   ]
 })
 export class DashboardModule { }

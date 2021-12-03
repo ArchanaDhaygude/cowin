@@ -1,0 +1,29 @@
+<!-- Get OTP -->
+<div class="container">
+    <div class="col-md-5 offset-md-4 mydiv pt-3 pb-3 px-5 mt-4 mb-4 bg-light ">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../assets/Images/login-screen.svg" width="100" height="200">
+        </ng-template>
+        <div>
+            <form>
+                <p class="fs-4 pt-5 text-center">Register or Sign In for Vaccination</p>
+                <p>An OTP will be sent to your mobile number for verification</p>
+                <div class="text-center  form-group pt-2">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" class="form-control" name="mobileNumber" [(ngModel)]="mobNo">
+                    <br>
+                    <button type="submit" class="btn btn-primary" (click)="generateOtp()">Get OTP</button><br>
+                </div><br>
+                <p class="text-center">By Sign In/Registration, I agree to the Terms of Service <br>
+                    and Privacy Policy</p> <br>
+
+                <h6 class="text-center">OR BOOK APPOINTMENT USING</h6><br>
+
+                <div class="text-center">
+                    <img src="../../../assets/Images/arogyasetu.png" alt="">
+                    <img src="../../../assets/Images/newumang-logo.png" alt="">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
